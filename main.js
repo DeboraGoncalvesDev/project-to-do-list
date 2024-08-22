@@ -1,27 +1,53 @@
 $(document).ready(function(){
 
-    $('#finish-todo').click(function(){
-        $(`${novoItem}`).addClass('.done');
-    })
+  
 
 
+   
 
 
 
     $('form').on('submit', function(e){
-        e.preventDeFault();
+        e.preventDefault();
+       
+            
         
+    
 
-
-        const novaTarefa = $('#nova-tarefa').val();
         
+    
 
+        const novaTarefa = $('#todo-input').val();
+        
+        
+       
+        
         const novoItem = $('<li></li>');
+       
+        
+        
+        
+        
+        $(novoItem).click(function(){
+            $(novoItem).addClass('done');
+        });
+        
+        
+        
+        novoItem.text(novaTarefa);
+        novoItem.appendTo('ul');
 
-         $(`${novaTarefa}`).appendto(novoItem);
-     })
 
-     $(novoItem).appendto('ul');
+
+
+
+        
+        $('#todo-input').val('');
+
+
+     });
+
+     
     
 })
 

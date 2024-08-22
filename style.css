@@ -88,16 +88,12 @@ button:hover > i{
     padding: 1rem;
     border-bottom: 1px solid #ddd;
     transition: .3s;
+    text-decoration: line-through;
+    font-style: italic;
+    color:#F6F7EB;
     
    
 }
 
-.done li{
-    flex: 1;
-    font-size: 0.9rem;
-    color:#F6F7EB;
-    text-decoration: line-through;
-    font-style: italic;
-    
-}
+
 
